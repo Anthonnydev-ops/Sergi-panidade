@@ -21,7 +21,7 @@ function App() {
           to_email: email,
           message: "Clique aqui para recuperar sua senha"
         },
-        "7K2SI7Cmb0RSq5SrH"
+        "OFmCxXHOcRuySoJe9"
       );
 
       alert("Se tiver algum e-mail vinculado a este, será enviado um email de recuperação");
