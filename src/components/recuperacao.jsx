@@ -27,7 +27,7 @@ function Recuperacao() {
       const data = await response.json();
 
       if (data.success) {
-        alert("Se existir uma conta, o email foi enviado ");
+        alert("Se existir uma conta, o email foi enviado!");
       } else {
         alert("Erro ao enviar email");
       }
