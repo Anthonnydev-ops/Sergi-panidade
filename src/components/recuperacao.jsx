@@ -1,7 +1,6 @@
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
 
-function App() {
+function Recuperacao() {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -14,20 +13,28 @@ function App() {
     setLoading(true);
 
     try {
-      await emailjs.send(
-        "service_iw0xk2c",
-        "template_mgoiai8",
-        {
-          to_email: email,
-          message: "Clique aqui para recuperar sua senha"
+      const response = await fetch("http://localhost:3001/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-        "7K2SI7Cmb0RSq5SrH"
-      );
+        body: JSON.stringify({
+          to_email: email,
+          message: "Clique aqui para recuperar sua senha 🔐",
+        }),
+      });
 
-      alert("Se tiver algum e-mail vinculado a este, será enviado um email de recuperação");
+      const data = await response.json();
+
+      if (data.success) {
+        alert("Se existir uma conta, o email foi enviado 🚀");
+      } else {
+        alert("Erro ao enviar email");
+      }
+
     } catch (error) {
-      console.error("ERRO COMPLETO:", error);
-      alert("Erro ao enviar email");
+      console.error(error);
+      alert("Erro ao conectar com o servidor");
     } finally {
       setLoading(false);
     }
@@ -42,7 +49,10 @@ function App() {
         placeholder="Digite seu email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
+        style={{ padding: "10px", marginBottom: "10px" }}
       />
+
+      <br />
 
       <button onClick={enviarEmail} disabled={loading}>
         {loading ? "Enviando..." : "Recuperar senha"}
@@ -51,4 +61,4 @@ function App() {
   );
 }
 
-export default App;
+export default Recuperacao;
