@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// 🔐 ROTA SEGURA DE ENVIO DE EMAIL
+
 app.post('/send-email', async(req, res) => {
     try {
         const { to_email, message } = req.body;
