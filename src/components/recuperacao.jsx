@@ -20,14 +20,14 @@ function Recuperacao() {
         },
         body: JSON.stringify({
           to_email: email,
-          message: "Clique aqui para recuperar sua senha 🔐",
+          message: "Clique aqui para recuperar sua senha ",
         }),
       });
 
       const data = await response.json();
 
       if (data.success) {
-        alert("Se existir uma conta, o email foi enviado 🚀");
+        alert("Se existir uma conta, o email foi enviado ");
       } else {
         alert("Erro ao enviar email");
       }
