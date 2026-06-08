@@ -1,13 +1,8 @@
-/* CONTAINER */
-
 .banner-container {
     display: flex;
     justify-content: center;
     margin-top: 40px;
 }
-
-
-/* BANNER */
 
 .banner {
     width: 95%;
@@ -20,16 +15,10 @@
     gap: 30px;
 }
 
-
-/* ESQUERDA */
-
 .banner-left {
     position: relative;
     overflow: hidden;
 }
-
-
-/* 🔥 GIF COM ANIMAÇÃO SUAVE */
 
 .banner-left img {
     width: 520px;
@@ -43,9 +32,6 @@
     transform: scale(1.03);
 }
 
-
-/* TAG */
-
 .tag {
     position: absolute;
     bottom: 12px;
@@ -58,24 +44,15 @@
     font-weight: 600;
 }
 
-
-/* DIVISOR */
-
 .divider {
     width: 1px;
     height: 260px;
     background: #0b3d2e;
 }
 
-
-/* DIREITA */
-
 .banner-right {
     flex: 1;
 }
-
-
-/* TÍTULO */
 
 .banner-right h1 {
     font-size: 48px;
@@ -84,17 +61,11 @@
     line-height: 1.1;
 }
 
-
-/* TEXTO */
-
 .banner-right p {
     margin-top: 18px;
     font-size: 16px;
     color: #003b2f;
 }
-
-
-/* BOTÃO */
 
 .btn-banner {
     margin-top: 25px;
@@ -113,9 +84,6 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-
-/* 🔥 MODAL OVERLAY */
-
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -127,12 +95,8 @@
     align-items: center;
     justify-content: center;
     z-index: 9999;
-    /* animação */
     animation: fadeIn 0.3s ease;
 }
-
-
-/* MODAL */
 
 .modal {
     background: white;
@@ -142,9 +106,6 @@
     text-align: center;
     animation: scaleIn 0.3s ease;
 }
-
-
-/* BOTÕES MODAL */
 
 .btn-login {
     margin-top: 15px;
@@ -168,9 +129,6 @@
     cursor: pointer;
     color: #555;
 }
-
-
-/* 🔥 ANIMAÇÕES */
 
 @keyframes fadeIn {
     from {
