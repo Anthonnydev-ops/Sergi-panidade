@@ -1,13 +1,8 @@
-/* CONTAINER */
-
 .banner-container {
     display: flex;
     justify-content: center;
     margin-top: 40px;
 }
-
-
-/* BANNER */
 
 .banner {
     width: 95%;
@@ -20,9 +15,6 @@
     gap: 30px;
 }
 
-
-/* ESQUERDA */
-
 .banner-left {
     position: relative;
 }
@@ -33,9 +25,6 @@
     object-fit: cover;
     border-radius: 12px;
 }
-
-
-/* TAG */
 
 .tag {
     position: absolute;
@@ -49,17 +38,11 @@
     font-weight: 600;
 }
 
-
-/* DIVISOR */
-
 .divider {
     width: 1px;
     height: 260px;
     background: #0b3d2e;
 }
-
-
-/* DIREITA */
 
 .banner-right {
     flex: 1;
@@ -78,9 +61,6 @@
     color: #003b2f;
 }
 
-
-/* BOTÃO */
-
 .btn-banner {
     margin-top: 25px;
     background: #0b3d2e;
@@ -96,9 +76,6 @@
     opacity: 0.9;
 }
 
-
-/* 🔥 MODAL (CORRIGIDO) */
-
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -110,7 +87,6 @@
     align-items: center;
     justify-content: center;
     z-index: 9999;
-    /* 🔥 ESSENCIAL */
 }
 
 .modal {
@@ -120,9 +96,6 @@
     width: 320px;
     text-align: center;
 }
-
-
-/* BOTÕES MODAL */
 
 .btn-login {
     margin-top: 15px;

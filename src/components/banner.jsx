@@ -10,16 +10,16 @@ export default function Banner() {
       <div className="banner-container">
         <div className="banner">
 
-          {/* ESQUERDA */}
+          
           <div className="banner-left">
             <img src={gif} alt="preview" />
             <span className="tag">@Sergipanidade</span>
           </div>
 
-          {/* DIVISOR */}
+          
           <div className="divider"></div>
 
-          {/* DIREITA */}
+          
           <div className="banner-right">
             <h1>
               Encontre <br />
@@ -42,7 +42,7 @@ export default function Banner() {
         </div>
       </div>
 
-      {/* ✅ MODAL */}
+      
       {abrirModal && (
         <div
           className="modal-overlay"
