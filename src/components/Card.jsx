@@ -64,7 +64,7 @@ export default function Card({ item }) {
         </div>
       </div>
 
-      {/* ✅ MODAL */}
+      
       {abrirModal && (
         <div
           className="modal-overlay"
