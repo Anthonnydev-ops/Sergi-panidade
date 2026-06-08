@@ -1,8 +1,13 @@
+/* CONTAINER */
+
 .banner-container {
     display: flex;
     justify-content: center;
     margin-top: 40px;
 }
+
+
+/* BANNER */
 
 .banner {
     width: 95%;
@@ -15,16 +20,31 @@
     gap: 30px;
 }
 
+
+/* ESQUERDA */
+
 .banner-left {
     position: relative;
+    overflow: hidden;
 }
+
+
+/* 🔥 GIF COM ANIMAÇÃO SUAVE */
 
 .banner-left img {
     width: 520px;
     height: 300px;
     object-fit: cover;
     border-radius: 12px;
+    transition: opacity 0.5s ease-in-out, transform 0.4s;
 }
+
+.banner-left img:hover {
+    transform: scale(1.03);
+}
+
+
+/* TAG */
 
 .tag {
     position: absolute;
@@ -38,15 +58,24 @@
     font-weight: 600;
 }
 
+
+/* DIVISOR */
+
 .divider {
     width: 1px;
     height: 260px;
     background: #0b3d2e;
 }
 
+
+/* DIREITA */
+
 .banner-right {
     flex: 1;
 }
+
+
+/* TÍTULO */
 
 .banner-right h1 {
     font-size: 48px;
@@ -55,11 +84,17 @@
     line-height: 1.1;
 }
 
+
+/* TEXTO */
+
 .banner-right p {
     margin-top: 18px;
     font-size: 16px;
     color: #003b2f;
 }
+
+
+/* BOTÃO */
 
 .btn-banner {
     margin-top: 25px;
@@ -70,11 +105,16 @@
     border: none;
     font-weight: 600;
     cursor: pointer;
+    transition: all 0.25s ease;
 }
 
 .btn-banner:hover {
-    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+
+/* 🔥 MODAL OVERLAY */
 
 .modal-overlay {
     position: fixed;
@@ -87,7 +127,12 @@
     align-items: center;
     justify-content: center;
     z-index: 9999;
+    /* animação */
+    animation: fadeIn 0.3s ease;
 }
+
+
+/* MODAL */
 
 .modal {
     background: white;
@@ -95,7 +140,11 @@
     border-radius: 12px;
     width: 320px;
     text-align: center;
+    animation: scaleIn 0.3s ease;
 }
+
+
+/* BOTÕES MODAL */
 
 .btn-login {
     margin-top: 15px;
@@ -105,6 +154,11 @@
     border-radius: 20px;
     border: none;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-login:hover {
+    opacity: 0.9;
 }
 
 .btn-fechar {
@@ -112,4 +166,28 @@
     background: transparent;
     border: none;
     cursor: pointer;
+    color: #555;
+}
+
+
+/* 🔥 ANIMAÇÕES */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
