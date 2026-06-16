@@ -1,16 +1,57 @@
-# React + Vite
+SERGIPANIDADE 🌴
+O Sergipanidade é uma plataforma digital dedicada a promover o turismo no estado de Sergipe. Nosso objetivo é facilitar a descoberta de experiências incríveis, oferecendo aos usuários uma interface intuitiva para explorar hotéis, restaurantes e pontos turísticos, além de permitir interações como avaliações e localização geográfica precisa.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Sobre o Projeto
+Com o Sergipanidade, você pode:
 
-Currently, two official plugins are available:
+Explorar: Encontrar os melhores lugares para visitar em Sergipe.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Localizar: Visualizar pontos de interesse diretamente no mapa.
 
-## React Compiler
+Avaliar: Contribuir com a comunidade compartilhando suas experiências nos locais visitados.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🛠 Tecnologias Utilizadas
+Este projeto foi desenvolvido utilizando React, focando em uma experiência de usuário fluida e responsiva.
 
-## Expanding the ESLint configuration
+⚙️ Pré-requisitos
+Para rodar este projeto em sua máquina, você precisará ter o Node.js instalado (que inclui o npm).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Baixe e instale o Node.js aqui (recomendamos a versão LTS).
+
+📦 Como Instalar e Rodar
+Siga os passos abaixo para configurar o projeto no seu ambiente local:
+
+Clone o repositório:
+
+Bash
+git clone https://github.com/seu-usuario/sergipanidade.git
+cd sergipanidade
+Instale as dependências:
+Utilize o comando abaixo para instalar todos os pacotes necessários:
+
+Bash
+npm install
+Inicie o projeto:
+Após a instalação, execute o comando para abrir o ambiente de desenvolvimento:
+
+Bash
+npm start
+O projeto será aberto automaticamente no seu navegador (geralmente em http://localhost:3000).
+
+🤝 Como Contribuir
+Contribuições são muito bem-vindas! Se você deseja melhorar o Sergipanidade:
+
+Faça um Fork do projeto.
+
+Crie uma Branch para sua nova funcionalidade (git checkout -b feature/nome-da-feature).
+
+Faça o Commit das suas alterações (git commit -m 'Adicionando nova funcionalidade').
+
+Envie para o Remote (git push origin feature/nome-da-feature).
+
+Abra um Pull Request.
+
+📧 Contato
+Se tiver dúvidas ou sugestões, sinta-se à vontade para entrar em contato através dos issues deste repositório.
+
+Desenvolvido com ❤️ para promover as belezas de Sergipe.
